@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelForge - Digital Appliances & Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+    <a href="#home"> <img src="01.png" alt="PixelForge Logo">
+    </a>
+</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Crafting Digital Excellence for Your Brand</h2>
+            <p>Your one-stop solution for stunning website designs, captivating visuals, and professional digital branding.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h3>Our Digital Appliances</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-desktop service-icon"></i>
+                    <h4>Website Designing</h4>
+                    <p>Beautiful, responsive, and user-friendly websites tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-image service-icon"></i>
+                    <h4>Thumbnail Making</h4>
+                    <p>Eye-catching thumbnails that drive clicks and boost engagement for your content.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-flag service-icon"></i>
+                    <h4>Banner Making</h4>
+                    <p>Professionally designed banners for your social media, ads, and website promotions.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-id-card service-icon"></i>
+                    <h4>Card Making</h4>
+                    <p>Custom business cards, greeting cards, and event invitations with unique designs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-briefcase service-icon"></i>
+                    <h4>Business Profile Creation</h4>
+                    <p>Comprehensive and compelling digital business profiles that stand out.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h4>SEO & Marketing</h4>
+                    <p>Improve your online visibility and reach a wider audience with our expert strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h3>Our Recent Work</h3>
+            <p>Check out some of our designs.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200/007bff/ffffff?text=E-commerce+Website" alt="E-commerce Website Example">
+                    <div class="portfolio-info">
+                        <h4>E-commerce Website</h4>
+                        <p>A sleek, modern online store designed for conversions.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Awsi gaming.png" alt="YouTube Thumbnail Example">
+                    <div class="portfolio-info">
+                        <h4>YouTube Thumbnail</h4>
+                        <p>High-impact thumbnail for a popular tech review channel.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="5fb7a4dd-8ed7-49c8-9c06-79e198995281.jpg" alt="Promotional Banner Example">
+                    <div class="portfolio-info">
+                        <h4>Promotional Banner</h4>
+                        <p>Dynamic banner for a summer sale campaign.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200/dc3545/ffffff?text=Business+Card" alt="Business Card Example">
+                    <div class="portfolio-info">
+                        <h4>Elegant Business Card</h4>
+                        <p>Sophisticated design for a professional consulting firm.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="Recent Work.html" class="btn view-more">View More Projects</a>
+        </div>
+    </section>
+
+    <section id="upload" class="upload">
+        <div class="container">
+            <h3>Upload Your Files for a Project</h3>
+            <p>Easily send us your images, documents, and specifications. We'll get to work right away!</p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="project-type">Project Type:</label>
+                    <select id="project-type" name="project_type">
+                        <option value="website-design">Website Design</option>
+                        <option value="thumbnail-making">Thumbnail Making</option>
+                        <option value="banner-making">Banner Making</option>
+                        <option value="card-making">Card Making</option>
+                        <option value="business-profile">Business Profile</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="file">Select File(s): (Max 10MB per file)</label>
+                    <input type="file" id="file" name="files[]" multiple accept="image/*,.pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details / Message (optional):</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Tell us more about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn upload-btn"><i class="fas fa-upload"></i> Upload Files</button>
+            </form>
+            <p class="upload-note">
+                **Note:** This form requires server-side processing to securely handle file uploads.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Get in Touch with PixelForge</h3>
+            <p>Ready to bring your digital vision to life? Let's discuss your project!</p>
+            <form action="/submit-contact" method="post">
+                <div class="form-group">
+                    <label for="cname">Name:</label>
+                    <input type="text" id="cname" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="cemail">Email:</label>
+                    <input type="email" id="cemail" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="csubject">Subject:</label>
+                    <input type="text" id="csubject" name="subject" placeholder="Project Inquiry, Quote Request, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="cmessage">Message:</label>
+                    <textarea id="cmessage" name="message" rows="7" required placeholder="Hi PixelForge, I'm interested in..."></textarea>
+                </div>
+                <button type="submit" class="btn contact-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> info@pixelforge.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Digital Ave, Creative City, CA 90210</p>
+            </div>
+        </div>
+    </section>
+<div class="chatbot-toggle-button" id="chatbot-toggle-button">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chat-header">
+            <h4>PixelForge AI Assistant</h4>
+            <span class="close-chat" id="close-chat">&times;</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hello! I'm your PixelForge AI Assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask me a question...">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PixelForge. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Chatbot functionality
+        const chatbotToggleButton = document.getElementById('chatbot-toggle-button');
+        const chatbotWidget = document.getElementById('chatbot-widget');
+        const closeChatButton = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        chatbotToggleButton.addEventListener('click', () => {
+            chatbotWidget.classList.toggle('active');
+            if (chatbotWidget.classList.contains('active')) {
+                userInput.focus(); // Focus input when chat opens
+            }
+        });
+
+        closeChatButton.addEventListener('click', () => {
+            chatbotWidget.classList.remove('active');
+        });
+
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function sendMessage() {
+            const messageText = userInput.value.trim();
+            if (messageText === '') return;
+
+            // Display user message
+            const userMessageDiv = document.createElement('div');
+            userMessageDiv.classList.add('message', 'user-message');
+            userMessageDiv.textContent = messageText;
+            chatMessages.appendChild(userMessageDiv);
+
+            userInput.value = ''; // Clear input
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to bottom
+
+            // --- THIS IS WHERE YOU'LL INTEGRATE WITH YOUR AI BACKEND ---
+            // For now, it's a simple placeholder response.
+            setTimeout(() => {
+                const botMessageDiv = document.createElement('div');
+                botMessageDiv.classList.add('message', 'bot-message');
+                // Replace this with a call to your AI backend
+                // Example: fetch('/api/chatbot', { method: 'POST', body: JSON.stringify({ message: messageText }) })
+                // .then(response => response.json())
+                // .then(data => botMessageDiv.textContent = data.reply);
+                if (messageText.toLowerCase().includes("services")) {
+                    botMessageDiv.textContent = "We offer Website Designing, Thumbnail Making, Banner Making, Card Making, Business Profile Creation, and SEO & Marketing.";
+                } else if (messageText.toLowerCase().includes("upload")) {
+                    botMessageDiv.textContent = "You can use our 'Upload Your Files' section to send us project materials. Please provide your name, email, project type, and attach your files.";
+                } else if (messageText.toLowerCase().includes("contact")) {
+                    botMessageDiv.textContent = "You can reach us via the contact form, email at ujjawalsharma9918@gmail.com, or phone at +1 (123) 456-7890.";
+                } else if (messageText.toLowerCase().includes("hello") || messageText.toLowerCase().includes("hi")) {
+                    botMessageDiv.textContent = "Hello there! How can I assist you with PixelForge today?";
+                }
+                else {
+                    botMessageDiv.textContent = "I'm sorry, I can only provide basic information about PixelForge services and contact details at the moment. For complex inquiries, please use our contact form.";
+                }
+                
+                chatMessages.appendChild(botMessageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to bottom
+            }, 500); // Simulate a delay for the bot's response
+        }
+    </script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
